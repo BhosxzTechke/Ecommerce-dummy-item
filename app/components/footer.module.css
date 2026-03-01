@@ -1,0 +1,10 @@
+.app-footer {
+    background-color: var(--dark-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+}

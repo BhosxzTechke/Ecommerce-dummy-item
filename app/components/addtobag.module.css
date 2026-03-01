@@ -1,0 +1,35 @@
+    .add-to-bag {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+
+        .quantity {
+            display: flex;
+                margin-right: 12px;
+
+                & input, & button {
+                    border: 1px solid var(--dark-color);
+                    outline: none;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    height: 50px;
+                }
+
+            & input {
+                width: 48px;
+                border-left: none;
+                border-right: none;
+                text-align: center;
+                padding: 0;
+                background-color: transparent;
+            }
+
+            & button {
+                width: 28px;
+                cursor: pointer;
+                background-color: var(--light-color);
+                color: var(--dark-color)
+            }
+        }
+    }

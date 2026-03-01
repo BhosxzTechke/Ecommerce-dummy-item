@@ -1,0 +1,34 @@
+    .product-card {
+        width: 240px;
+            background-color: var(--grey-color);
+
+            .rating {
+                font-size: 12px;
+                text-align: left;
+                padding: 6px 8px;
+            }
+            & img {
+                width: 100%;
+                aspect-ratio: 1/1;
+                margin: 0;
+            }
+
+            .info {
+                padding: 10px;
+                text-align: center;
+
+                & h3 {
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                    min-height: 38px;
+                }
+
+                & p {
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin: 0;
+                }
+
+            }
+    }

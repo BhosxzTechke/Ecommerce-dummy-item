@@ -1,0 +1,93 @@
+.shopping-bag-table {
+        width: 100%;
+        border-collapse: collapse;
+      
+        & th, & td {
+          padding: 12px;
+          text-align: center;
+
+          & a {
+            text-decoration: underline;
+          }
+        }
+
+        & tr {
+            border: 1px solid var(--grey-color);
+        }
+
+        & th {
+            background-color: var(--light-color);
+            font-weight: bold;
+        }
+
+        .quantity {
+
+            .actions {
+                display: flex;
+                justify-content: center;
+            }
+
+            .stock {
+                font-size: 12px;
+            }
+        }
+
+        & input, button.qty {
+            border: 1px solid var(--grey-color);
+            outline: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 50px;
+            background-color: transparent;
+            color: var(--dark-color);
+            font-weight: 700;
+          }
+
+        & input {
+            width: 48px;
+            border-left: none;
+            border-right: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        button.qty {
+            width: 28px;
+            cursor: pointer;
+            background-color: var(--light-color);
+        }
+
+        .grand-total {
+            & td {
+                text-align: right;
+                font-weight: bold; 
+                padding-right: 20px;
+              }
+        }
+    }
+
+    .empty-basket {
+        text-align: center;
+
+        & h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        & a {
+            text-decoration: underline;
+            color: var(--main-color);
+        }
+    }
+
+    .basket-options {
+        text-align: right;
+        background-color: var(--light-color);
+        padding: 30px;
+        margin-top: 40px;
+
+        & button {
+            margin-left: 12px;
+        }
+    }

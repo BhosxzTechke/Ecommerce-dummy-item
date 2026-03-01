@@ -1,0 +1,22 @@
+.products {
+    margin-bottom: 60px;
+    
+    .wrapper {
+        text-align: center;
+
+        & h2 {
+            margin-bottom: 20px;
+        }
+
+        & p {
+            max-width: 480px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+
+        & button {
+            margin-top: 40px;
+        }
+    }
+}

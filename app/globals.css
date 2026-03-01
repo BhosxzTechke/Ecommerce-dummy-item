@@ -1,0 +1,153 @@
+
+/* Find the CSS code for project here: https://github.com/ivanlourencogomes/css-for-next-js-shopping-bag/tree/main */
+
+:root {
+  --main-color: #FF7004;
+  --light-color: #F4F5F8;
+  --dark-color: #2F333A;
+  --grey-color: #E2E2E2;
+}
+
+* {
+  font-family: var(--font-open-sans);
+  color: var(--dark-color);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,button {
+  font-family: var(--font-raleway);
+}
+
+main {
+  min-height: calc(100vh - 120px);
+}
+
+.container {
+  width: 1050px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    background-color: var(--light-color);
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.dark {
+        background-color: var(--dark-color);
+        h1 {
+            color: white;
+        }
+    }
+
+    h1 {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 36px;
+    }
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  height: 50px;
+  padding: 0 20px;
+  font-weight: 600;
+
+  &:disabled {
+    cursor: initial !important;
+  }
+
+  &.outline {
+    background-color: transparent;
+    border: none;
+    color: var(--dark-color);
+    text-decoration: underline;
+  }
+
+  &.transparent {
+    background-color: transparent;
+    border: none;
+    color: var(--dark-color);
+  }
+
+}
+
+.loading-page {
+  padding: 80px 0;
+}
+
+
+.error-page {
+  padding: 120px 0;
+  text-align: center;
+
+  h1, h2, p {
+    margin-bottom: 20px;
+  }
+
+  img {
+    margin-bottom: 12px;
+    height: auto;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.error-section {
+  padding: 20px 0;
+  text-align: center;
+
+  u {
+    cursor: pointer;
+  }
+}
+
+.suspense {
+  text-align: center;
+}
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l5 1s infinite linear alternate;
+}
+
+@keyframes l5 {
+    0%  {box-shadow: 15px 0 #000, -15px 0 #0002;background: #000 }
+    33% {box-shadow: 15px 0 #000, -15px 0 #0002;background: #0002}
+    66% {box-shadow: 15px 0 #0002,-15px 0 #000; background: #0002}
+    100%{box-shadow: 15px 0 #0002,-15px 0 #000; background: #000 }
+}

@@ -1,0 +1,47 @@
+header.app-header {
+    background-color: var(--grey-color);
+
+            .wrapper{
+
+                height: 60px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            img{
+                width: 100px;
+            }
+
+            ul {
+                display: flex;
+
+                li {
+                    margin-left: 20px;
+                    font-size: 14px;
+
+                &.basket {
+                position: relative;
+
+                & span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: var(--main-color);
+                    color: white;
+                    min-width: 18px;
+                    min-height: 18px;
+                    position: absolute;
+                    top: -12px;
+                    right: -16px;
+                    border-radius: 100%;
+                    font-size: 12px;
+
+                                    }
+
+                    }
+                }
+
+            }
+
+    }
+}
