@@ -63,6 +63,11 @@ export default function PaginatedList({initialPage, Totalpage, category}) {
 
 
 
+                <p>Showing {products.length} to {Totalpage} </p>
+                
+
+
+
         </>
     )
 }
